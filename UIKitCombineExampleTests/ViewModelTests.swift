@@ -7,6 +7,7 @@
 
 import XCTest
 import Combine
+import Model
 @testable import UIKitCombineExample
 
 @MainActor

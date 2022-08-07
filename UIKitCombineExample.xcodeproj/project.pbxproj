@@ -15,10 +15,9 @@
 		DB55657F289F2DEE000F76C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB55657D289F2DEE000F76C8 /* LaunchScreen.storyboard */; };
 		DB556594289F2DEF000F76C8 /* UIKitCombineExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB556593289F2DEF000F76C8 /* UIKitCombineExampleUITests.swift */; };
 		DB556596289F2DEF000F76C8 /* UIKitCombineExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB556595289F2DEF000F76C8 /* UIKitCombineExampleUITestsLaunchTests.swift */; };
-		DB5565A3289F2E4C000F76C8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565A2289F2E4C000F76C8 /* APIClient.swift */; };
-		DB5565A5289F2EA5000F76C8 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565A4289F2EA5000F76C8 /* Entity.swift */; };
 		DB5565A7289F30F9000F76C8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565A6289F30F9000F76C8 /* ViewModel.swift */; };
 		DB5565A9289F3544000F76C8 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5565A8289F3544000F76C8 /* ViewModelTests.swift */; };
+		DB5565AC289F4B7C000F76C8 /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = DB5565AB289F4B7C000F76C8 /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +50,6 @@
 		DB55658F289F2DEF000F76C8 /* UIKitCombineExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitCombineExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB556593289F2DEF000F76C8 /* UIKitCombineExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCombineExampleUITests.swift; sourceTree = "<group>"; };
 		DB556595289F2DEF000F76C8 /* UIKitCombineExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitCombineExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		DB5565A2289F2E4C000F76C8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		DB5565A4289F2EA5000F76C8 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		DB5565A6289F30F9000F76C8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		DB5565A8289F3544000F76C8 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB5565AC289F4B7C000F76C8 /* Model in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +87,7 @@
 				DB556588289F2DEF000F76C8 /* UIKitCombineExampleTests */,
 				DB556592289F2DEF000F76C8 /* UIKitCombineExampleUITests */,
 				DB556570289F2DEB000F76C8 /* Products */,
+				DB5565AA289F4B7C000F76C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,8 +108,6 @@
 				DB556574289F2DEB000F76C8 /* SceneDelegate.swift */,
 				DB556576289F2DEB000F76C8 /* ViewController.swift */,
 				DB5565A6289F30F9000F76C8 /* ViewModel.swift */,
-				DB5565A2289F2E4C000F76C8 /* APIClient.swift */,
-				DB5565A4289F2EA5000F76C8 /* Entity.swift */,
 				DB556578289F2DEB000F76C8 /* Main.storyboard */,
 				DB55657B289F2DEE000F76C8 /* Assets.xcassets */,
 				DB55657D289F2DEE000F76C8 /* LaunchScreen.storyboard */,
@@ -136,6 +133,13 @@
 			path = UIKitCombineExampleUITests;
 			sourceTree = "<group>";
 		};
+		DB5565AA289F4B7C000F76C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +156,9 @@
 			dependencies = (
 			);
 			name = UIKitCombineExample;
+			packageProductDependencies = (
+				DB5565AB289F4B7C000F76C8 /* Model */,
+			);
 			productName = UIKitCombineExample;
 			productReference = DB55656F289F2DEB000F76C8 /* UIKitCombineExample.app */;
 			productType = "com.apple.product-type.application";
@@ -269,11 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB556577289F2DEB000F76C8 /* ViewController.swift in Sources */,
-				DB5565A5289F2EA5000F76C8 /* Entity.swift in Sources */,
 				DB556573289F2DEB000F76C8 /* AppDelegate.swift in Sources */,
 				DB556575289F2DEB000F76C8 /* SceneDelegate.swift in Sources */,
 				DB5565A7289F30F9000F76C8 /* ViewModel.swift in Sources */,
-				DB5565A3289F2E4C000F76C8 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +633,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB5565AB289F4B7C000F76C8 /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB556567289F2DEB000F76C8 /* Project object */;
 }
