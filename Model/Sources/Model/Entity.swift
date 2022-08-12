@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Body: Decodable {
+public struct Body: Decodable, Sendable {
     public var current: Current
     
     public init(current: Current) {
@@ -13,7 +13,7 @@ public struct Body: Decodable {
 }
 
 
-public struct Current: Decodable {
+public struct Current: Decodable, Sendable {
     public var condition: Condition
     
     public init(condition: Condition) {
@@ -25,7 +25,7 @@ public struct Current: Decodable {
     }
 }
 
-public struct Condition: Decodable {
+public struct Condition: Decodable, Sendable {
     public var text: String
     
     public init(text: String) {

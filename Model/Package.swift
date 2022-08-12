@@ -17,7 +17,10 @@ let package = Package(
         .target(
             name: "Model",
             dependencies: [],
-            path: "Sources"
+            path: "Sources",
+            swiftSettings: [
+                .unsafeFlags(["-Xfrontend", "-strict-concurrency=complete"])
+            ]
         ),
         .testTarget(
             name: "ModelTests",
